@@ -55,6 +55,50 @@
   margin: auto;
 }
 
+.IP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  > form {
+    background-color: rgb(168, 168, 168);
+    color: white;
+    font-weight: bold;
+    padding: 1.2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5px 5px 10px #2c2c2c;
+
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      > label {
+        font-size: small;
+      }
+      > input {
+        outline: none;
+        border: 1px solid gray;
+        border-radius: 3px;
+        padding: 0.15rem;
+        width: 300px;
+      }
+    }
+    > button {
+      background-color: black;
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 0.25rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+    }
+  }
+}
+
 .Projects {
   padding: 1rem;
 }

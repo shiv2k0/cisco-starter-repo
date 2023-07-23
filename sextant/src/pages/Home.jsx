@@ -2,12 +2,18 @@ import Img1 from "../assets/images/Dashboard1.jpg";
 import Img2 from "../assets/images/Dashboard2.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { IpAddress } from "../components";
 
 const Home = () => {
   return (
     <div className="Home">
       <div className="carousel">
-        <Carousel showStatus={false} centerMode={0} showThumbs={0}>
+        <Carousel
+          showStatus={false}
+          centerMode={false}
+          showThumbs={false}
+          interval={3000}
+        >
           <div>
             <img src={Img1} alt="" />
           </div>
@@ -16,6 +22,7 @@ const Home = () => {
           </div>
         </Carousel>
       </div>
+      <IpAddress />
     </div>
   );
 };
