@@ -99,6 +99,27 @@
   }
 }
 
+.Latency {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+  > div {
+    background-color: gray;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    font-size: 2rem;
+    > span {
+      font-size: small;
+      text-transform: uppercase;
+    }
+  }
+}
+
 .Projects {
   padding: 1rem;
 }

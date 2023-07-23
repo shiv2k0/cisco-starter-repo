@@ -2,7 +2,7 @@ import Img1 from "../assets/images/Dashboard1.jpg";
 import Img2 from "../assets/images/Dashboard2.jpg";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { IpAddress } from "../components";
+import { IpAddress, Latency } from "../components";
 
 const Home = () => {
   return (
@@ -23,6 +23,7 @@ const Home = () => {
         </Carousel>
       </div>
       <IpAddress />
+      <Latency />
     </div>
   );
 };
